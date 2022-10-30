@@ -1,0 +1,78 @@
+$gr:#555555;
+$ws:whitesmoke;
+
+%brdr {
+  border: #ccc solid 1px;
+}
+
+.div {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin box-sh($px1,$px2,$px3,$cl) {
+  box-shadow: $px1 $px2 $px3 $cl;
+}
+
+body {
+  background-color: $ws;
+}
+
+#pop-cont {
+  color: $gr;
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  top: auto;
+  width: auto;
+  padding: 20px;
+  @include box-sh(7px,8px,10px,#ccc);
+  @extend %brdr;
+  display: none;
+  z-index: 1111;
+  p span {
+    font-style: italic;
+    text-decoration: underline;
+  }
+}
+
+#btn-close {
+  float: right;
+  @include box-sh(0px,0px,3px,#ccc);
+  @extend %brdr;
+  cursor: pointer;
+  span {
+    justify-content: center;
+    vertical-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  &:hover {
+    background-color: $gr;
+    color: white;
+  }
+}
+
+#btn-up-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px 25px 0px;
+}
+
+#btn-up {
+  @include box-sh(5px,7px,10px,#ccc);
+  transition-duration: 400ms;
+  background-color: $ws;
+  color: $gr;
+  border-radius: 8px;
+  font-size: 20px;
+  padding: 16px;
+  border: 2px solid $gr;
+  &:hover {
+    background-color: $gr;
+    transition-duration: 400ms;
+    border-color: white;
+    color: white;
+  }
+}

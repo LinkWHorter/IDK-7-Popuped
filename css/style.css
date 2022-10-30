@@ -1,0 +1,71 @@
+#btn-close, #pop-cont {
+  border: #ccc solid 1px;
+}
+
+.div {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+#pop-cont {
+  color: #555555;
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  top: auto;
+  width: auto;
+  padding: 20px;
+  box-shadow: 7px 8px 10px #ccc;
+  display: none;
+  z-index: 1111;
+}
+#pop-cont p span {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+#btn-close {
+  float: right;
+  box-shadow: 0px 0px 3px #ccc;
+  cursor: pointer;
+}
+#btn-close span {
+  justify-content: center;
+  vertical-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#btn-close:hover {
+  background-color: #555555;
+  color: white;
+}
+
+#btn-up-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px 25px 0px;
+}
+
+#btn-up {
+  box-shadow: 5px 7px 10px #ccc;
+  transition-duration: 400ms;
+  background-color: whitesmoke;
+  color: #555555;
+  border-radius: 8px;
+  font-size: 20px;
+  padding: 16px;
+  border: 2px solid #555555;
+}
+#btn-up:hover {
+  background-color: #555555;
+  transition-duration: 400ms;
+  border-color: white;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
